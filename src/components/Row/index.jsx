@@ -2,21 +2,20 @@ import Tile from '../Tile'
 
 import styles from './Row.module.css'
 
-const Row = () => {
+const Row = (props) => {
 	return (
 		<div className={styles.row}>
-			<Tile black />
-			<Tile />
-			<Tile black />
-			<Tile />
-			<Tile black />
-			<Tile />
-			<Tile black />
-			<Tile />
-			<Tile black />
-			<Tile />
-			<Tile black />
-			<Tile />
+			<Tile black={props.black} />
+			<Tile black={!props.black} />
+
+			<Tile black={props.black} />
+			<Tile black={!props.black} />
+
+			<Tile black={props.black} />
+			<Tile black={!props.black} />
+
+			<Tile black={props.black} />
+			<Tile black={!props.black} />
 		</div>
 	)
 }
