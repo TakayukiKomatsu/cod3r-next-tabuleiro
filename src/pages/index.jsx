@@ -1,7 +1,13 @@
-// import styles from '../styles/Home.module.css'
-
+/* Component */
 import Tile from '../components/Tile'
 
+/* Styles */
+import styles from '../../styles/Home.module.css'
+
 export default function Home() {
-	return <Tile></Tile>
+	return (
+		<div className={styles.container}>
+			<Tile />
+		</div>
+	)
 }
