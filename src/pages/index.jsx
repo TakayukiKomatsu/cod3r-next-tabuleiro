@@ -1,5 +1,5 @@
 /* Component */
-import Tile from '../components/Tile'
+import Row from '../components/Row'
 
 /* Styles */
 import styles from '../../styles/Home.module.css'
@@ -7,7 +7,7 @@ import styles from '../../styles/Home.module.css'
 export default function Home() {
 	return (
 		<div className={styles.container}>
-			<Tile />
+			<Row />
 		</div>
 	)
 }
